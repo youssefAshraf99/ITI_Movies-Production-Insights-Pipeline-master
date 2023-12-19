@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:TalendNoSQLMetadata="http://www.talend.org/nosql" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <TalendNoSQLMetadata:NoSQLConnection xmi:id="_dbvG0JO4Ee6FPYvBP6F9vQ" name="MoviesStagingArea" label="MoviesStagingArea" dataPackage="_hLc50JO4Ee6FPYvBP6F9vQ" dbType="MONGODB">
+    <attributes xmi:id="_dbvG0ZO4Ee6FPYvBP6F9vQ" key="DB_VERSION" value="MONGODB_4_4_X"/>
+    <attributes xmi:id="_dbvG0pO4Ee6FPYvBP6F9vQ" key="HOST" value="localhost"/>
+    <attributes xmi:id="_dbvG05O4Ee6FPYvBP6F9vQ" key="PORT" value="27017"/>
+    <attributes xmi:id="_dbvG1JO4Ee6FPYvBP6F9vQ" key="DATABASE" value="MoviesStagingArea"/>
+    <attributes xmi:id="_dbvG1ZO4Ee6FPYvBP6F9vQ" key="REQUIRED_AUTHENTICATION" value="false"/>
+    <attributes xmi:id="_dbvG1pO4Ee6FPYvBP6F9vQ" key="USERNAME" value=""/>
+    <attributes xmi:id="_dbvG15O4Ee6FPYvBP6F9vQ" key="PASSWORD" value=""/>
+    <attributes xmi:id="_dbvG2JO4Ee6FPYvBP6F9vQ" key="REQUIRED_ENCRYPTION" value="false"/>
+    <attributes xmi:id="_dbvG2ZO4Ee6FPYvBP6F9vQ" key="USE_REPLICA_SET" value="false"/>
+    <attributes xmi:id="_dbvG2pO4Ee6FPYvBP6F9vQ" key="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC"/>
+    <attributes xmi:id="_dbvG25O4Ee6FPYvBP6F9vQ" key="SET_AUTHENTICATION_DATABASE" value="false"/>
+    <attributes xmi:id="_dbvG3JO4Ee6FPYvBP6F9vQ" key="AUTHENTICATION_DATABASE" value=""/>
+    <attributes xmi:id="_dbvG3ZO4Ee6FPYvBP6F9vQ" key="KRB_USER_PRINCIPAL" value=""/>
+    <attributes xmi:id="_dbvG3pO4Ee6FPYvBP6F9vQ" key="KRB_REALM" value=""/>
+    <attributes xmi:id="_dbvG35O4Ee6FPYvBP6F9vQ" key="KRB_KDC" value=""/>
+    <attributes xmi:id="_dbvG4JO4Ee6FPYvBP6F9vQ" key="REPLICA_SET" value="[]"/>
+  </TalendNoSQLMetadata:NoSQLConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_hLc50JO4Ee6FPYvBP6F9vQ" name="MoviesStagingArea" dataManager="_dbvG0JO4Ee6FPYvBP6F9vQ">
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc50ZO4Ee6FPYvBP6F9vQ" name="country" id="_fQu5kJO4Ee6FPYvBP6F9vQ" label="country">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc50pO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc505O4Ee6FPYvBP6F9vQ" name="country_id" label="country_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc51JO4Ee6FPYvBP6F9vQ" name="country_iso_code" label="country_iso_code" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc51ZO4Ee6FPYvBP6F9vQ" name="country_name" label="country_name" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc51pO4Ee6FPYvBP6F9vQ" name="movie_cast" id="_fU5A0JO4Ee6FPYvBP6F9vQ" label="movie_cast">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc515O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc52JO4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc52ZO4Ee6FPYvBP6F9vQ" name="person_id" label="person_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc52pO4Ee6FPYvBP6F9vQ" name="character_name" label="character_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc525O4Ee6FPYvBP6F9vQ" name="gender_id" label="gender_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc53JO4Ee6FPYvBP6F9vQ" name="cast_order" label="cast_order" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc53ZO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc53pO4Ee6FPYvBP6F9vQ" name="gender" id="_fY5-IJO4Ee6FPYvBP6F9vQ" label="gender">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc535O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc54JO4Ee6FPYvBP6F9vQ" name="gender_id" label="gender_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc54ZO4Ee6FPYvBP6F9vQ" name="gender" label="gender" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc54pO4Ee6FPYvBP6F9vQ" name="movie" id="_fcZXAJO4Ee6FPYvBP6F9vQ" label="movie">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc545O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc55JO4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc55ZO4Ee6FPYvBP6F9vQ" name="title" label="title" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc55pO4Ee6FPYvBP6F9vQ" name="budget" label="budget" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc555O4Ee6FPYvBP6F9vQ" name="homepage" label="homepage" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc56JO4Ee6FPYvBP6F9vQ" name="overview" label="overview" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc56ZO4Ee6FPYvBP6F9vQ" name="popularity" label="popularity" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc56pO4Ee6FPYvBP6F9vQ" name="release_date" label="release_date" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc565O4Ee6FPYvBP6F9vQ" name="revenue" label="revenue" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc57JO4Ee6FPYvBP6F9vQ" name="runtime" label="runtime" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc57ZO4Ee6FPYvBP6F9vQ" name="movie_status" label="movie_status" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc57pO4Ee6FPYvBP6F9vQ" name="tagline" label="tagline" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc575O4Ee6FPYvBP6F9vQ" name="vote_average" label="vote_average" length="-1" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc58JO4Ee6FPYvBP6F9vQ" name="vote_count" label="vote_count" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc58ZO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc58pO4Ee6FPYvBP6F9vQ" name="language" id="_fgksYJO4Ee6FPYvBP6F9vQ" label="language">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc585O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc59JO4Ee6FPYvBP6F9vQ" name="language_id" label="language_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc59ZO4Ee6FPYvBP6F9vQ" name="language_code" label="language_code" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc59pO4Ee6FPYvBP6F9vQ" name="language_name" label="language_name" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc595O4Ee6FPYvBP6F9vQ" name="production_company" id="_flJDUJO4Ee6FPYvBP6F9vQ" label="production_company">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5-JO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5-ZO4Ee6FPYvBP6F9vQ" name="company_id" label="company_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5-pO4Ee6FPYvBP6F9vQ" name="company_name" label="company_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5-5O4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc5_JO4Ee6FPYvBP6F9vQ" name="language_role" id="_fpKnsJO4Ee6FPYvBP6F9vQ" label="language_role">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5_ZO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5_pO4Ee6FPYvBP6F9vQ" name="role_id" label="role_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc5_5O4Ee6FPYvBP6F9vQ" name="language_role" label="language_role" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6AJO4Ee6FPYvBP6F9vQ" name="person" id="_fsx8YJO4Ee6FPYvBP6F9vQ" label="person">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6AZO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6ApO4Ee6FPYvBP6F9vQ" name="person_id" label="person_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6A5O4Ee6FPYvBP6F9vQ" name="person_name" label="person_name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6BJO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6BZO4Ee6FPYvBP6F9vQ" name="production_country" id="_fwq94JO4Ee6FPYvBP6F9vQ" label="production_country">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6BpO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6B5O4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6CJO4Ee6FPYvBP6F9vQ" name="country_id" label="country_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6CZO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6CpO4Ee6FPYvBP6F9vQ" name="genre" id="_f0ixQJO4Ee6FPYvBP6F9vQ" label="genre">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6C5O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6DJO4Ee6FPYvBP6F9vQ" name="genre_id" label="genre_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6DZO4Ee6FPYvBP6F9vQ" name="genre_name" label="genre_name" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6DpO4Ee6FPYvBP6F9vQ" name="movie_genres" id="_f4dA4JO4Ee6FPYvBP6F9vQ" label="movie_genres">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6D5O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6EJO4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6EZO4Ee6FPYvBP6F9vQ" name="genre_id" label="genre_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6EpO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6E5O4Ee6FPYvBP6F9vQ" name="department" id="_f8MRYJO4Ee6FPYvBP6F9vQ" label="department">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6FJO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6FZO4Ee6FPYvBP6F9vQ" name="department_id" label="department_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6FpO4Ee6FPYvBP6F9vQ" name="department_name" label="department_name" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6F5O4Ee6FPYvBP6F9vQ" name="movie_crew" id="_gATVUJO4Ee6FPYvBP6F9vQ" label="movie_crew">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6GJO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6GZO4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6GpO4Ee6FPYvBP6F9vQ" name="person_id" label="person_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6G5O4Ee6FPYvBP6F9vQ" name="department_id" label="department_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6HJO4Ee6FPYvBP6F9vQ" name="job" label="job" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6HZO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6HpO4Ee6FPYvBP6F9vQ" name="movie_company" id="_gEM94JO4Ee6FPYvBP6F9vQ" label="movie_company">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6H5O4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6IJO4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6IZO4Ee6FPYvBP6F9vQ" name="company_id" label="company_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6IpO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="relational:TdTable" xmi:id="_hLc6I5O4Ee6FPYvBP6F9vQ" name="movie_languages" id="_gIGmcJO4Ee6FPYvBP6F9vQ" label="movie_languages">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6JJO4Ee6FPYvBP6F9vQ" name="_id" label="_id" talendType="id_String" key="true" nullable="false"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6JZO4Ee6FPYvBP6F9vQ" name="movie_id" label="movie_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6JpO4Ee6FPYvBP6F9vQ" name="language_id" label="language_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6J5O4Ee6FPYvBP6F9vQ" name="language_role_id" label="language_role_id" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_hLc6KJO4Ee6FPYvBP6F9vQ" name="indate" label="indate" talendType="id_Date"/>
+    </ownedElement>
+  </orgomg.cwm.resource.relational:Schema>
+</xmi:XMI>

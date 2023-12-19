@@ -1,0 +1,184 @@
+[ {
+  "baseItem" : {
+    "id" : "_JP3U4JQwEe6T1YzJPyGPXA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ - datedim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ - moviedim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ - persondim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ - productiondim",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_cast",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_company",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - person",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - production_company",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_X7IRcJQaEe6T1YzJPyGPXA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_xcfmUJQvEe6T1YzJPyGPXA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_xcfmUJQvEe6T1YzJPyGPXA - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_pHbUEJPHEe6T-K__uqVx0Q",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - country",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - language_role",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_company",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_languages",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - production_company",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - production_country",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_tDcSgJQbEe6T1YzJPyGPXA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - department",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - gender",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_cast",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_crew",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - person",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_uxS54JO3Ee6FPYvBP6F9vQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_0BJMcJPDEe6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - genre",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - language",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_genres",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_dbufwJO4Ee6FPYvBP6F9vQ - movie_languages",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]

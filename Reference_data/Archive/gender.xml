@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <row>
+    <gender_id>0</gender_id>
+    <gender>Unspecified</gender>
+  </row>
+  <row>
+    <gender_id>1</gender_id>
+    <gender>Female</gender>
+  </row>
+  <row>
+    <gender_id>2</gender_id>
+    <gender>Male</gender>
+  </row>
+</root>

@@ -1,0 +1,80 @@
+CREATE TABLE IF NOT EXISTS dwh.datedim
+(
+    date_pk int primary key,
+    date_date date,
+    date_year integer,
+    date_quarter integer,
+    date_month_num integer,
+    date_month_name character varying(15)
+)
+
+CREATE TABLE IF NOT EXISTS dwh.moviedim
+(
+    movie_pk serial primary key,
+    movie_bk integer,
+    movie_title character varying(300),
+    movie_genre character varying(250),
+    movie_language_code character varying(250),
+    movie_runtim integer,
+    movie_budget double precision,
+    movie_overview character varying(1000),
+    movie_release_date date
+)
+
+CREATE TABLE IF NOT EXISTS dwh.persondim
+(
+    person_pk serial primary key,
+    person_bk integer,
+    person_name character varying(250),
+    person_gender character varying(250),
+    person_department character varying(250),
+    person_job character varying(250)
+)
+
+CREATE TABLE IF NOT EXISTS dwh.productiondim
+(
+    production_pk serial primary key,
+    production_bk integer,
+    production_company character varying(250),
+    production_country character varying(250),
+    production_language character varying(250)
+)
+
+CREATE TABLE IF NOT EXISTS dwh.moviesfact
+(
+	movie_sk int,
+	person_sk int,
+	production_sk int,
+	date_sk int,
+    popularity double precision,
+    revenue double precision,
+    vote_count integer,
+    vote_average double precision,
+	CONSTRAINT movie_fact_fk FOREIGN KEY(movie_sk) REFERENCES dwh.moviedim(movie_pk),
+	CONSTRAINT person_fact_fk FOREIGN KEY(person_sk) REFERENCES dwh.persondim(person_pk),
+	CONSTRAINT production_fact_fk FOREIGN KEY(production_sk) REFERENCES dwh.productiondim(production_pk),
+	CONSTRAINT date_fact_fk FOREIGN KEY(date_sk) REFERENCES dwh.datedim(date_pk)
+)
+
+
+select * from dwh.datedim
+
+select * from dwh.moviedim
+
+select * from dwh.persondim
+
+select * from dwh.productiondim
+
+select * from dwh.moviesfact
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:rrKrWLkc5lv2krJGsiihDdfaPoqYfYsENLU1sS6w" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/el-neshwy/Programs/Talend/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:JXROsTcsy20VkMoEfq18BysbKvUPn9Uno4NemtLn" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_8UICMJO2Ee6FPYvBP6F9vQ" name="DataOperation"/>
+    <routinesParameter id="_8TRtoJO2Ee6FPYvBP6F9vQ" name="Mathematical"/>
+    <routinesParameter id="_8UQlEJO2Ee6FPYvBP6F9vQ" name="Numeric"/>
+    <routinesParameter id="_8ULFgJO2Ee6FPYvBP6F9vQ" name="Relational"/>
+    <routinesParameter id="_8UNhwJO2Ee6FPYvBP6F9vQ" name="StringHandling"/>
+    <routinesParameter id="_8USaQJO2Ee6FPYvBP6F9vQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_8UJ3YJO2Ee6FPYvBP6F9vQ" name="TalendDate"/>
+    <routinesParameter id="_8UWrsJO2Ee6FPYvBP6F9vQ" name="TalendStringUtil"/>
+    <routinesParameter id="_8UPW8JO2Ee6FPYvBP6F9vQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_4_4_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;MoviesStagingArea&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="LABEL" name="READ_PREFERENCE_NOTE" value="Note : Use Connection component to set Read Preference" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC" show="false"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:cjt3jAG+xYxydNRKJQz3UP4lXaSjr5YpelpGYxNk" show="false"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;movie&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ - movie" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false"/>
+    <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="title"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="budget"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="homepage"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="overview"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="popularity"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="release_date"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="revenue"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="runtime"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_status"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="tagline"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vote_average"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vote_count"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indate"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_BSON_TO_STRING" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="movie"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="movie" name="tMongoDBInput_1">
+      <column comment="" key="true" length="0" name="_id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="movie_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="title" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="budget" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="homepage" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="overview" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="release_date" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="runtime" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="movie_status" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="tagline" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="indate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JP3U4JQwEe6T1YzJPyGPXA-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="movie_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="person_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="release_date" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="movie_id" expression="row1.movie_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="person_id" expression="row2.person_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" expression="row1.release_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" expression="row1.popularity " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="row1.revenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" expression="row1.vote_count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" expression="row1.vote_average " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String"/>
+        <mapperTableEntries name="movie_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="title" type="id_String" nullable="true"/>
+        <mapperTableEntries name="budget" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="homepage" type="id_String" nullable="true"/>
+        <mapperTableEntries name="overview" type="id_String" nullable="true"/>
+        <mapperTableEntries name="popularity" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="release_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="revenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="runtime" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="movie_status" type="id_String" nullable="true"/>
+        <mapperTableEntries name="tagline" type="id_String" nullable="true"/>
+        <mapperTableEntries name="vote_average" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="indate" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String"/>
+        <mapperTableEntries name="movie_id" expression="row1.movie_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="person_id" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="character_name" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="gender_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="cast_order" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="indate" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String"/>
+        <mapperTableEntries name="person_id" expression="row2.person_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="person_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="indate" type="id_Date" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_4_4_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;MoviesStagingArea&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="LABEL" name="READ_PREFERENCE_NOTE" value="Note : Use Connection component to set Read Preference" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC" show="false"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Jnz1pfBO6X68By7IdvaJ38ERN3D4cTZ78bNLOmZa" show="false"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;movie_cast&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ - movie_cast" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false"/>
+    <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="character_name"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gender_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="cast_order"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indate"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_BSON_TO_STRING" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="movie_cast"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="movie_cast" name="tMongoDBInput_3">
+      <column comment="" key="true" length="0" name="_id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="movie_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="person_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="character_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="gender_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="cast_order" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="indate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_4_4_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;MoviesStagingArea&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="LABEL" name="READ_PREFERENCE_NOTE" value="Note : Use Connection component to set Read Preference" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC" show="false"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:kQ9ZF8zS3KVLdeqfwz1D0KoMKPtYYvnhKJxrJnQO" show="false"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;person&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ - person" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false"/>
+    <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_name"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indate"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_BSON_TO_STRING" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="person"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="person" name="tMongoDBInput_2">
+      <column comment="" key="true" length="0" name="_id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="person_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="person_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="indate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JP3U4JQwEe6T1YzJPyGPXA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="-1" name="movie_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="person_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="company_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="release_date" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="movie_id" expression="out1.movie_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="person_id" expression="out1.person_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="company_id" expression="row4.company_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" expression="out1.release_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" expression="out1.popularity " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="out1.revenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" expression="out1.vote_count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" expression="out1.vote_average " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="movie_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="person_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String"/>
+        <mapperTableEntries name="movie_id" expression="out1.movie_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="company_id" expression="" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="indate" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="ALL_MATCHES" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="_id" type="id_String"/>
+        <mapperTableEntries name="company_id" expression="row4.company_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="company_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="indate" type="id_Date" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_5" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_4_4_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;MoviesStagingArea&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="LABEL" name="READ_PREFERENCE_NOTE" value="Note : Use Connection component to set Read Preference" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC" show="false"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:oiyx+IJf/X41QcQp/bIH7aBOkJgX/gCX0rl4jeO4" show="false"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;movie_company&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ - movie_company" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false"/>
+    <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="company_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indate"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_BSON_TO_STRING" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="movie_company"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="movie_company" name="tMongoDBInput_5">
+      <column comment="" key="true" length="0" name="_id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="movie_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="company_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="indate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMongoDBInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MONGODB_4_4_X"/>
+    <elementParameter field="CHECK" name="USE_REPLICA_SET" value="false"/>
+    <elementParameter field="TABLE" name="REPLICA_SET" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="27017"/>
+    <elementParameter field="TEXT" name="DATABASE" value="&quot;MoviesStagingArea&quot;"/>
+    <elementParameter field="CHECK" name="USE_SSL" value="false"/>
+    <elementParameter field="CHECK" name="SET_READ_PREFERENCE" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="READ_PREFERENCE" value="PRIMARY" show="false"/>
+    <elementParameter field="LABEL" name="READ_PREFERENCE_NOTE" value="Note : Use Connection component to set Read Preference" show="false"/>
+    <elementParameter field="CHECK" name="REQUIRED_AUTHENTICATION" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTHENTICATION_MECHANISM" value="NEGOTIATE_MEC" show="false"/>
+    <elementParameter field="CHECK" name="SET_AUTHENTICATION_DATABASE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="AUTHENTICATION_DATABASE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:mphyo2Nwy3bTyZz4JANFyxigMPmvE8tqvMd6XMCr" show="false"/>
+    <elementParameter field="TEXT" name="KRB_USER_PRINCIPAL" value="&quot;mongouser@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_REALM" value="&quot;EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter field="TEXT" name="KRB_KDC" value="&quot;kdc.example.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="COLLECTION" value="&quot;production_company&quot;"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_FLOW:REPOSITORY_SCHEMA_TYPE" value="_dbufwJO4Ee6FPYvBP6F9vQ - production_company" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="QUERY_TYPE" value="FIND_QUERY"/>
+    <elementParameter field="LABEL" name="NOTE_ISOLATION" value="Note : Surround String values in your query with single quotes&#xA;Note : If you are running on a Sharded Cluster, please make sure to include the shard key in the query."/>
+    <elementParameter field="MEMO" name="QUERY" value="&quot;{}&quot;"/>
+    <elementParameter field="TABLE" name="AGGREGATION_STAGES" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_FIELDS" value="false"/>
+    <elementParameter field="TABLE" name="FIELDS_TO_RETURN" show="false"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="company_id"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="company_name"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="indate"/>
+      <elementValue elementRef="PARENT_NODE_PATH" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="SORT"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="QUERYOPTION_NOTIMEOUT" value="false" show="false"/>
+    <elementParameter field="CHECK" name="EXTERNAL_SORT_AGGREGATION" value="false" show="false"/>
+    <elementParameter field="CHECK" name="CONVERT_BSON_TO_STRING" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="production_company"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="production_company" name="tMongoDBInput_4">
+      <column comment="" key="true" length="0" name="_id" nullable="false" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="company_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="company_name" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="indate" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="992" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JP3U4JQwEe6T1YzJPyGPXA-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out3">
+      <column comment="" defaultValue="nextval('dwh.moviesdim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="person_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="company_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="release_date" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out3">
+        <mapperTableEntries name="movie_pk" expression="row6.movie_pk " type="id_Integer"/>
+        <mapperTableEntries name="person_id" expression="out2.person_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="company_id" expression="out2.company_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" expression="out2.release_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" expression="out2.popularity " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="out2.revenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" expression="out2.vote_count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" expression="out2.vote_average " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="movie_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="person_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="company_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="movie_pk" type="id_Integer"/>
+        <mapperTableEntries name="movie_bk" expression="out2.movie_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="movie_title" type="id_String" nullable="true"/>
+        <mapperTableEntries name="movie_genre" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="movie_language_code" type="id_String" nullable="true"/>
+        <mapperTableEntries name="movie_runtim" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="movie_budget" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="movie_overview" type="id_String" nullable="true"/>
+        <mapperTableEntries name="movie_release_date" type="id_Date" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_4" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JP3U4JQwEe6T1YzJPyGPXA-tMap_4-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out4">
+      <column comment="" defaultValue="nextval('dwh.moviesdim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.persondim_person_pk_seq'::regclass)" key="true" length="10" name="person_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="company_id" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="release_date" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out4">
+        <mapperTableEntries name="movie_pk" expression="out3.movie_pk " type="id_Integer"/>
+        <mapperTableEntries name="person_pk" expression="row7.person_pk " type="id_Integer"/>
+        <mapperTableEntries name="company_id" expression="out3.company_id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" expression="out3.release_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" expression="out3.popularity " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="out3.revenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" expression="out3.vote_count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" expression="out3.vote_average " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="movie_pk" type="id_Integer"/>
+        <mapperTableEntries name="person_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="company_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="person_pk" type="id_Integer"/>
+        <mapperTableEntries name="person_bk" expression="out3.person_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="person_name" type="id_String" nullable="true"/>
+        <mapperTableEntries name="person_gender" type="id_String" nullable="true"/>
+        <mapperTableEntries name="person_department" type="id_String" nullable="true"/>
+        <mapperTableEntries name="person_job" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="96" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_5" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JP3U4JQwEe6T1YzJPyGPXA-tMap_5-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out5">
+      <column comment="" defaultValue="nextval('dwh.moviesdim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.persondim_person_pk_seq'::regclass)" key="true" length="10" name="person_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.productiondim_production_pk_seq'::regclass)" key="true" length="10" name="production_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="release_date" nullable="true" pattern="" precision="0" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out5">
+        <mapperTableEntries name="movie_pk" expression="out4.movie_pk " type="id_Integer"/>
+        <mapperTableEntries name="person_pk" expression="out4.person_pk " type="id_Integer"/>
+        <mapperTableEntries name="production_pk" expression="row8.production_pk " type="id_Integer"/>
+        <mapperTableEntries name="release_date" expression="out4.release_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" expression="out4.popularity " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="out4.revenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" expression="out4.vote_count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" expression="out4.vote_average " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="movie_pk" type="id_Integer"/>
+        <mapperTableEntries name="person_pk" type="id_Integer"/>
+        <mapperTableEntries name="company_id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="release_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="production_pk" type="id_Integer"/>
+        <mapperTableEntries name="production_bk" expression="out4.company_id " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="production_company" type="id_String" nullable="true"/>
+        <mapperTableEntries name="production_country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="production_language" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_6" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_JP3U4JQwEe6T1YzJPyGPXA-tMap_6-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out6">
+      <column comment="" defaultValue="nextval('dwh.moviesdim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" originalDbColumnName="movie_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.persondim_person_pk_seq'::regclass)" key="true" length="10" name="person_pk" nullable="false" originalDbColumnName="person_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.productiondim_production_pk_seq'::regclass)" key="true" length="10" name="production_pk" nullable="false" originalDbColumnName="production_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="date_pk" nullable="false" originalDbColumnName="date_sk" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out6">
+        <mapperTableEntries name="movie_pk" expression="out5.movie_pk " type="id_Integer"/>
+        <mapperTableEntries name="person_pk" expression="out5.person_pk " type="id_Integer"/>
+        <mapperTableEntries name="production_pk" expression="out5.production_pk " type="id_Integer"/>
+        <mapperTableEntries name="date_pk" expression="row9.date_pk " type="id_Integer"/>
+        <mapperTableEntries name="popularity" expression="out5.popularity " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" expression="out5.revenue " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" expression="out5.vote_count " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" expression="out5.vote_average " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="out5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="movie_pk" type="id_Integer"/>
+        <mapperTableEntries name="person_pk" type="id_Integer"/>
+        <mapperTableEntries name="production_pk" type="id_Integer"/>
+        <mapperTableEntries name="release_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="popularity" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="revenue" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="vote_count" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="vote_average" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="date_pk" type="id_Integer"/>
+        <mapperTableEntries name="date_date" expression="out5.release_date " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="date_year" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="date_quarter" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="date_month_num" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="date_month_name" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MoviesDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AdlwobaVCRgh7+RuktDcUFx7IrIhlyvZJzL4CSF5+QOFKg=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ - moviedim" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;moviedim&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_pk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_bk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_title\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_genre\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_language_code\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_runtim\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_budget\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_overview\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;moviedim\&quot;.\&quot;movie_release_date\&quot;&#xA;FROM \&quot;dwh\&quot;.\&quot;moviedim\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_pk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_bk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_title"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_genre"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_language_code"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_runtim"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_budget"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_overview"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_release_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="moviedim" name="tDBInput_1">
+      <column comment="" defaultValue="nextval('dwh.moviedim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="movie_bk" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="300" name="movie_title" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="movie_genre" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="movie_language_code" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="movie_runtim" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="17" name="movie_budget" nullable="true" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1000" name="movie_overview" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="movie_release_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1216" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MoviesDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:H8ICObhs3X0IygAlyfDRcdYd0Z10OY4EYnmPhlGKu44g3A=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ - persondim" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;persondim&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;dwh\&quot;.\&quot;persondim\&quot;.\&quot;person_pk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;persondim\&quot;.\&quot;person_bk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;persondim\&quot;.\&quot;person_name\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;persondim\&quot;.\&quot;person_gender\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;persondim\&quot;.\&quot;person_department\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;persondim\&quot;.\&quot;person_job\&quot;&#xA;FROM \&quot;dwh\&quot;.\&quot;persondim\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_pk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_bk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_gender"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_department"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_job"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="persondim" name="tDBInput_2">
+      <column comment="" defaultValue="nextval('dwh.persondim_person_pk_seq'::regclass)" key="true" length="10" name="person_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="person_bk" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="person_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="person_gender" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="person_department" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="person_job" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MoviesDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:mF33SwF1C2CeEPPbZJRQUSKfExqD07DWxRRdfLwIlehD/w=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ - productiondim" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;productiondim&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;dwh\&quot;.\&quot;productiondim\&quot;.\&quot;production_pk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;productiondim\&quot;.\&quot;production_bk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;productiondim\&quot;.\&quot;production_company\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;productiondim\&quot;.\&quot;production_country\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;productiondim\&quot;.\&quot;production_language\&quot;&#xA;FROM \&quot;dwh\&quot;.\&quot;productiondim\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="production_pk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="production_bk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="production_company"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="production_country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="production_language"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="productiondim" name="tDBInput_3">
+      <column comment="" defaultValue="nextval('dwh.productiondim_production_pk_seq'::regclass)" key="true" length="10" name="production_pk" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="production_bk" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="production_company" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="production_country" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="250" name="production_language" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MoviesDWH&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:zDFppQUvvdIf6fxCs7edBtf/5x4odUnivqBzE9bzHLzdtQ=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ - datedim" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;datedim&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;dwh\&quot;.\&quot;datedim\&quot;.\&quot;date_pk\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;datedim\&quot;.\&quot;date_date\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;datedim\&quot;.\&quot;date_year\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;datedim\&quot;.\&quot;date_quarter\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;datedim\&quot;.\&quot;date_month_num\&quot;, &#xA;  \&quot;dwh\&quot;.\&quot;datedim\&quot;.\&quot;date_month_name\&quot;&#xA;FROM \&quot;dwh\&quot;.\&quot;datedim\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_pk"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_quarter"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_month_num"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_month_name"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="datedim" name="tDBInput_4">
+      <column comment="" key="true" length="10" name="date_pk" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="date_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="date_year" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="date_quarter" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="date_month_num" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="date_month_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_0BJMcJPDEe6FPYvBP6F9vQ" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;MoviesDWH&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;postgres&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:QegeK22v+9gNqjElBoIJq2COOsqjQrFJsWqo3ZUNJRKkTQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;moviesfact&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="movie_pk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="person_pk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="production_pk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_pk"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="popularity"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="revenue"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vote_count"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="vote_average"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="MoviesDWH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBOutput_1">
+      <column comment="" defaultValue="nextval('dwh.moviesdim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" originalDbColumnName="movie_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.persondim_person_pk_seq'::regclass)" key="true" length="10" name="person_pk" nullable="false" originalDbColumnName="person_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.productiondim_production_pk_seq'::regclass)" key="true" length="10" name="production_pk" nullable="false" originalDbColumnName="production_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="date_pk" nullable="false" originalDbColumnName="date_sk" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" defaultValue="nextval('dwh.moviesdim_movie_pk_seq'::regclass)" key="true" length="10" name="movie_pk" nullable="false" originalDbColumnName="movie_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.persondim_person_pk_seq'::regclass)" key="true" length="10" name="person_pk" nullable="false" originalDbColumnName="person_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="nextval('dwh.productiondim_production_pk_seq'::regclass)" key="true" length="10" name="production_pk" nullable="false" originalDbColumnName="production_sk" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="date_pk" nullable="false" originalDbColumnName="date_sk" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="popularity" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="revenue" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_count" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="vote_average" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tMongoDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tMongoDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tMongoDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="8" metaname="tMongoDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_5" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tMongoDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tMongoDBInput_4" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="company_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="person_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out4" lineStyle="0" metaname="out4" offsetLabelX="0" offsetLabelY="0" source="tMap_4" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out5" lineStyle="0" metaname="out5" offsetLabelX="0" offsetLabelY="0" source="tMap_5" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out6" lineStyle="0" metaname="out6" offsetLabelX="0" offsetLabelY="0" source="tMap_6" target="tDBOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_6">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMongoDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
